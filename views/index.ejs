@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Ocular Engine</title>
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/d22b3868-a3fc-4b30-afaf-76e667ec7972%2Ffavicon.ico?1549162019405" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script src="/client.js" defer></script>
+    
+    <style>
+      html,body{
+        margin:0;
+        height:100%;
+        overflow:hidden;
+      }
+      img{
+        min-height:99%;
+        max-height:99%;
+        position: absolute;
+        height:auto;
+        width:auto;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+      img:hover {
+        cursor: pointer; 
+      }
+    </style>
+  </head>
+  <body>
+    <a onclick="location.reload()">
+      <img src="<%= image_url %>" style="object-fit: cover;"/>
+    </a>
+  </body>
+</html>
